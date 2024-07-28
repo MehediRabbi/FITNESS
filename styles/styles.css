@@ -1,0 +1,692 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* Font settings */
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+#dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Body styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+  font-size: 16px;
+}
+
+/* General Flex Display */
+.display-flex {
+  display: flex;
+}
+
+/* Header styling */
+.header-top {
+  display: flex;
+  justify-content: space-between; /* Space between items to push menu icon to the right */
+  align-items: center; /* Center items vertically */
+  padding: 10px;
+  
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 2rem;
+  color: rgba(230, 83, 60, 1);
+  font-style: italic;
+ 
+}
+/*  */
+.fa-solid.fa-bars {
+  display: none;
+  margin-left: auto; /* Push the icon to the far right */
+  cursor: pointer;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 0.5rem;
+}
+
+.n-links {
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+.n-links a {
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.btn-home {
+  background-color: orangered;
+  border-radius: 42px;
+  border: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.header-2nd {
+  align-items: center;
+  padding-top: 1.25rem;
+  justify-content: space-around;
+}
+
+.left-side {
+  max-width: 40rem;
+}
+
+.left-heading {
+  font-weight: 800;
+  font-size: 3.5rem;
+  color: white;
+}
+
+.l-heading-p {
+  color: white;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.download {
+  background-color: black;
+  border-radius: 42px;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+.heading-image {
+  position: relative;
+}
+
+.heading-image img {
+  max-width: 100%;
+}
+
+.buttons-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.overlay-btn1, .overlay-btn2 {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 0.2rem 0.4rem; /* Further reduced padding */
+    border-radius: 30px;
+    color: white;
+    max-width: 120px; /* Reduced max-width */
+    text-align: center;
+    font-size: 0.75rem; /* Smaller font size */
+  }
+  
+  .overlay-btn1 {
+    top: 1rem;
+    right: 1rem;
+  }
+  
+  .overlay-btn2 {
+    bottom: 1rem;
+    left: 1rem;
+  }
+  
+  .h1-bt {
+    font-size: 1.2rem; /* Smaller heading text */
+  }
+  .h12, .h13{
+
+    font-size: 1rem;
+  }
+
+  /* BMI */
+
+/* BMI Calculator Section */
+.bmi-calculator {
+  padding: 40px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.bmi-calculator h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.bmi-calculator p {
+  margin-bottom: 30px;
+}
+
+.bmi-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Styling for the BMI Chart and Form */
+.bmi-chart, .bmi-form {
+  flex: 1;
+  min-width: 300px;
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* BMI Chart Table Styling */
+.bmi-chart table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.bmi-chart th, .bmi-chart td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: left;
+}
+
+.bmi-chart th {
+  background-color: #444;
+}
+
+/* BMI Form Styling */
+.bmi-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bmi-form .form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bmi-form .form-row input,
+.bmi-form .form-row select {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #444;
+  color: #fff;
+}
+
+.bmi-form button {
+  padding: 10px 20px;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+  /* meet our team */
+
+  .meet-team {
+    padding: 40px 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+.meet-team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.team-box {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the images */
+    aspect-ratio: 1/1; /* Ensures the box is square */
+}
+
+.team-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    padding: 5px; /* Padding for text */
+    border-radius: 5px; /* Optional: Rounded corners */
+    color: white;
+}
+
+.team-text p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.team-text h3 {
+    margin: 0;
+    font-size: 1rem; /* Slightly smaller to fit well */
+}
+
+
+
+
+
+
+  
+
+/* Change Your Habits section */
+.habit-sec {
+  padding: 2.5rem 1.25rem;
+  background-color: #000;
+  color: #fff;
+  margin-top: 1.25rem;
+}
+
+.habit-heading h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.habit-heading p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.habits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+}
+
+.habit-div {
+  text-align: center;
+}
+
+.habit-div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.625rem;
+}
+
+.habit-div h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.habit-div p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+
+/* run an extra mile */
+
+
+
+.extra-mile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: black;
+  margin: 20px 30px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.extra-mile img {
+  max-width: 35%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.extra-mile h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.extra-mile p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.join-btn {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* MY IDEA */
+
+.success-stories {
+  background-color:black;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.success-stories h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: orangered;
+}
+
+.story {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: burlywood;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.story .before, .story .after {
+  flex: 1;
+  min-width: 120px;
+  max-width: 300px;
+}
+
+.story img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.story-content {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.story-content p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.story-content a {
+  color: orangered;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.story-content a:hover {
+  color: darkorange;
+}
+
+
+
+/* FOOTER */
+
+.footer {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer h2, .footer h3 {
+  color: orangered;
+}
+
+.footer p {
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-links {
+  flex: 1;
+}
+
+.footer-links h3 {
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #666;
+}
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width: 576px) {
+  body {
+    padding-left: 0.3125rem;
+    padding-right: 0.3125rem;
+  }
+
+  .logo-container {
+    flex-direction: row;
+  }
+  
+  .fa-solid.fa-bars {
+    display: block;
+    
+  }
+
+  .button-container {
+    display: none; /* Hide button container in mobile view */
+  }
+  .navbar, .header-2nd, .habits {
+    flex-direction: column;
+  }
+
+
+
+ 
+
+  .left-heading {
+    font-size: 2rem;
+  }
+
+  .btn-home, .download {
+    padding: 0.3125rem 1.875rem;
+  }
+
+  .left-side {
+    width: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .habit-heading {
+    text-align: center;
+  }
+
+  .habits {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  /* run an extra mile */
+
+  .extra-mile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.extra-mile div {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.extra-mile img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* team */
+.team {
+  grid-template-columns: 1fr; /* Single column on small screens */
+}
+
+.team-box {
+  padding: 15px;
+  max-width: 100%;
+}
+
+.meet-team h2 {
+  font-size: 2rem;
+}
+
+.team-box img {
+  height: auto; /* Maintain aspect ratio on smaller screens */
+}
+
+/* BMI */
+.bmi-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.bmi-form .form-row {
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.bmi-form .form-row select,
+.bmi-form .form-row input {
+  width: 100%;
+}
+
+.bmi-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+/* MY */
+
+.story {
+  flex-direction: column;
+  text-align: center;
+}
+
+.story-content {
+  text-align: center;
+}
+/* story */
+
+.footer-content {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+}
