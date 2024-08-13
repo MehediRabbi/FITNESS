@@ -25,26 +25,42 @@
 }
 
 body {
-  background-color: #121212;
+  background-color: rgba(17, 17, 17, 1);
   padding-left: 2rem;
   padding-right: 2rem;
   color: white;
   font-size: 16px;
 }
 
+
 /* General Flex Display */
 .display-flex {
   display: flex;
+  
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 /* Header styling */
 .header-top {
   display: flex;
-  justify-content: space-between; /* Space between items to push menu icon to the right */
-  align-items: center; /* Center items vertically */
+  justify-content: space-between; 
+  align-items: center; 
   padding: 10px;
   
 }
+.header {
+  background: linear-gradient(to bottom, #000000, #434343, #000000);
+  
+
+ 
+}
+
 
 .logo {
   font-weight: 800;
@@ -56,12 +72,14 @@ body {
 /*  */
 .fa-solid.fa-bars {
   display: none;
-  margin-left: auto; /* Push the icon to the far right */
+  margin-left: auto; 
   cursor: pointer;
+ 
 }
 
 .navbar {
   align-items: center;
+  
 }
 
 .button-container {
@@ -137,7 +155,7 @@ body {
   max-width: 100%;
 }
 
-.buttons-overlay {
+.button-over{
   position: absolute;
   top: 0;
   left: 0;
@@ -149,30 +167,30 @@ body {
   padding: 1rem;
 }
 
-.overlay-btn1, .overlay-btn2 {
+.i-btn1, .i-btn2 {
     position: absolute;
     background: rgba(0, 0, 0, 0.5);
     border: none;
-    padding: 0.2rem 0.4rem; /* Further reduced padding */
+    padding: 0.2rem 0.4rem; 
     border-radius: 30px;
     color: white;
-    max-width: 120px; /* Reduced max-width */
+    max-width: 120px; 
     text-align: center;
-    font-size: 0.75rem; /* Smaller font size */
+    font-size: 0.75rem; 
   }
   
-  .overlay-btn1 {
+  .i-btn1 {
     top: 1rem;
     right: 1rem;
   }
   
-  .overlay-btn2 {
+  .i-btn2 {
     bottom: 1rem;
     left: 1rem;
   }
   
   .h1-bt {
-    font-size: 1.2rem; /* Smaller heading text */
+    font-size: 1.2rem; 
   }
   .h12, .h13{
 
@@ -184,7 +202,7 @@ body {
 /* BMI Calculator Section */
 .bmi-calculator {
   padding: 40px 20px;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
   text-align: center;
 }
@@ -203,15 +221,20 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  
+
 }
 
 /* Styling for the BMI Chart and Form */
 .bmi-chart, .bmi-form {
   flex: 1;
   min-width: 300px;
-  background-color: #333;
+  /* background-color: #333; */
   padding: 20px;
-  border-radius: 10px;
+ 
+ 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -293,8 +316,8 @@ body {
     width: 100%;
     max-width: 300px;
     overflow: hidden;
-    border-radius: 10px; /* Rounded corners for the images */
-    aspect-ratio: 1/1; /* Ensures the box is square */
+    border-radius: 10px; 
+   
 }
 
 .team-box img {
@@ -308,9 +331,9 @@ body {
     bottom: 10px;
     left: 10px;
     text-align: left;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
-    padding: 5px; /* Padding for text */
-    border-radius: 5px; /* Optional: Rounded corners */
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 5px; 
+    border-radius: 5px; 
     color: white;
 }
 
@@ -321,7 +344,7 @@ body {
 
 .team-text h3 {
     margin: 0;
-    font-size: 1rem; /* Slightly smaller to fit well */
+    font-size: 1rem; 
 }
 
 
@@ -334,7 +357,7 @@ body {
 /* Change Your Habits section */
 .habit-sec {
   padding: 2.5rem 1.25rem;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
   margin-top: 1.25rem;
 }
@@ -346,7 +369,7 @@ body {
 }
 
 .habit-heading p {
-  font-family: 'Inter', sans-serif;
+  
   font-size: 1rem;
   text-align: center;
   margin-bottom: 1.875rem;
@@ -371,13 +394,13 @@ body {
 }
 
 .habit-div h3 {
-  font-family: 'Inter', sans-serif;
+
   font-size: 1.5rem;
   margin-bottom: 0.625rem;
 }
 
 .habit-div p {
-  font-family: 'Inter', sans-serif;
+ 
   font-size: 1rem;
 }
 
@@ -390,7 +413,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: black;
+  background-color: #444;
   margin: 20px 30px;
   border-radius: 10px;
   gap: 20px;
@@ -427,9 +450,10 @@ body {
 /* MY IDEA */
 
 .success-stories {
-  background-color:black;
+  background: linear-gradient(to bottom, #000000, #434343, #000000);;
   padding: 40px 20px;
   text-align: center;
+  
 }
 
 .success-stories h2 {
@@ -444,9 +468,10 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  max-width: 1000px;
+  /* max-width: 1000px; */
+  width: 100%;
   margin: 0 auto;
-  background: burlywood;
+  background: rgb(31, 29, 26);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -567,6 +592,7 @@ body {
 
   .logo-container {
     flex-direction: row;
+    
   }
   
   .fa-solid.fa-bars {
@@ -575,10 +601,14 @@ body {
   }
 
   .button-container {
-    display: none; /* Hide button container in mobile view */
+    display: none; 
   }
   .navbar, .header-2nd, .habits {
     flex-direction: column;
+  }
+  .navbar{
+
+    display: flex;
   }
 
 
@@ -631,7 +661,7 @@ body {
 
 /* team */
 .team {
-  grid-template-columns: 1fr; /* Single column on small screens */
+  grid-template-columns: 1fr; 
 }
 
 .team-box {
@@ -644,7 +674,7 @@ body {
 }
 
 .team-box img {
-  height: auto; /* Maintain aspect ratio on smaller screens */
+  height: auto; 
 }
 
 /* BMI */
